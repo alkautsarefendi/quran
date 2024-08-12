@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_base">#0878BE</color>
+    <color name="green_dark">#388CC4</color>
+    <color name="green_light">#388CC4</color>
+    <color name="green_header_start">#171717</color>
+    <color name="green_header_end">#171717</color>
+    <color name="green_ic_quran_light">#66FFFFFF</color>
+    <color name="green_ic_quran_dark">#4D8B8B8B</color>
+    <color name="green_button_last_read">#EAEAEA</color>
+    <color name="green_about">#388CC4</color>
+    <color name="green_button">#388CC4</color>
+    <color name="green_transparent">#0878BE</color>
+    <color name="teal_200">#10FFFFFF</color>
+    <color name="teal_700">#108B8B8B</color>
+    <color name="black">#EAEAEA</color>
+    <color name="always_black">#000000</color>
+    <color name="yellow">#108B8B8B</color>
+    <color name="white_base">#070707</color>
+    <color name="white_second">#171717</color>
+    <color name="white_low_opp">#3E3F41</color>
+    <color name="white_always">#EAEAEA</color>
+    <color name="white_card">#171717</color>
+    <color name="white_button">#4D8B8B8B</color>
+    <color name="gray">#8F8F91</color>
+    <color name="light_gray">#809A9A9A</color>
+    <color name="red">#CA0000</color>
+    <color name="white_5_percent">#08FFFFFF</color>
+    <color name="blue_night">#3d6173</color >
+</resources>
