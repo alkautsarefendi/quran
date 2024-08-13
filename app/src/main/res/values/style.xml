@@ -3,19 +3,19 @@
 
     <style name="Theme.MuslimQ.Toolbar">
         <item name="android:textColor">@color/white_base</item>
-        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
         <item name="android:textSize">20sp</item>
     </style>
 
     <style name="collapsedTitleStyle" parent="@style/TextAppearance.AppCompat.Title">
         <item name="android:textColor">@color/green_base</item>
-        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
         <item name="android:textSize">18sp</item>
     </style>
 
     <style name="collapsedTabletTitleStyle" parent="@style/TextAppearance.AppCompat.Title">
         <item name="android:textColor">@color/green_base</item>
-        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
         <item name="android:textSize">24sp</item>
     </style>
 
@@ -27,13 +27,13 @@
 
     <style name="BottomTextNavActive" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textColor">@color/green_base</item>
-        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
         <item name="android:textSize">15sp</item>
     </style>
 
     <style name="BottomTextNavInactive" parent="TextAppearance.AppCompat.Caption">
         <item name="android:textColor">@color/gray</item>
-        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
         <item name="android:textSize">15sp</item>
     </style>
 

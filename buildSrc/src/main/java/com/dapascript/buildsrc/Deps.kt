@@ -5,11 +5,11 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 object Libs {
 
     // App
-    const val appId = "com.prodev.muslimq"
+    const val appId = "com.alkautsar.alquran.althaf"
     const val minSdk = 24
     const val targetSdk = 34
-    const val versionCode = 20240716
-    const val versionName = "3.0"
+    const val versionCode = 1
+    const val versionName = "1.0.1"
     const val testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
     // Main

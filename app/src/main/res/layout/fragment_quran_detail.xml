@@ -52,7 +52,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="18dp"
-                        android:fontFamily="@font/poppins_medium"
+                        android:fontFamily="@font/montserrat_medium"
                         android:textColor="@color/white_always"
                         android:textSize="24sp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +65,7 @@
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="3dp"
-                        android:fontFamily="@font/poppins_medium"
+                        android:fontFamily="@font/montserrat_medium"
                         android:textAlignment="center"
                         android:textColor="@color/white_always"
                         android:textSize="16sp"
@@ -79,7 +79,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:fontFamily="@font/poppins_medium"
+                        android:fontFamily="@font/montserrat_medium"
                         android:textColor="@color/white_always"
                         android:textSize="16sp"
                         app:layout_constraintEnd_toEndOf="@+id/tv_ayah_meaning"
@@ -102,7 +102,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="20dp"
-                        android:fontFamily="@font/amiri_bold"
+                        android:fontFamily="@font/montserrat_bold"
                         android:text="@string/bismillah"
                         android:textAlignment="center"
                         android:textColor="@color/white_always"
@@ -146,6 +146,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:layout_marginTop="10dp"
+                        android:padding="10dp"
                         android:background="@drawable/bg_circle"
                         android:src="@drawable/ic_play"
                         app:layout_constraintStart_toStartOf="parent"
@@ -169,7 +170,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10dp"
-                        android:fontFamily="@font/poppins_medium"
+                        android:fontFamily="@font/montserrat_medium"
                         android:textColor="@color/green_base"
                         android:textSize="14sp"
                         app:layout_constraintBottom_toBottomOf="@+id/iv_sound"
@@ -340,7 +341,7 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/poppins_semibold"
+            android:fontFamily="@font/montserrat_semibold"
             android:text="@string/no_internet"
             android:textAlignment="center"
             android:textSize="14sp"
@@ -349,5 +350,31 @@
             app:layout_constraintTop_toBottomOf="@+id/lottie_empty" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/forground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background2"
+        android:alpha="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

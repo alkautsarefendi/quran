@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/quranFragment"
-        android:icon="@drawable/ic_quran_bottom"
-        android:title="@string/quran" />
+
     <item
         android:id="@+id/shalatFragment"
         android:icon="@drawable/ic_shalat"
         android:title="@string/schedule_pray" />
+
     <item
         android:id="@+id/doaFragment"
         android:icon="@drawable/ic_doa"
         android:title="@string/daily_prayer" />
+
+    <item
+        android:id="@+id/quranFragment"
+        android:icon="@drawable/ic_quran"
+        android:title="@string/quran" />
+
+    <item
+        android:id="@+id/tasbihFragment"
+        android:icon="@drawable/ic_tasbih"
+        android:title="@string/tasbih_menu" />
+
     <item
         android:id="@+id/othersFragment"
-        android:icon="@drawable/ic_others"
-        android:title="@string/others" />
+        android:icon="@drawable/ic_setting"
+        android:title="@string/setting" />
 </menu>

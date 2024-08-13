@@ -17,46 +17,37 @@
         android:paddingVertical="10dp"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/iv_doa"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:contentDescription="@string/daily_doa"
-            android:src="@drawable/ic_praying"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/tv_doa_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_bold"
             android:includeFontPadding="false"
-            android:fontFamily="@font/poppins_bold"
-            android:textAlignment="center"
             android:text="@string/daily_doa"
+            android:textAlignment="center"
             android:textColor="@color/white_always"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@id/sv_doa"
-            app:layout_constraintTop_toBottomOf="@id/sv_doa" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/sv_doa"
             android:layout_width="0dp"
             android:layout_height="35dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/bg_round_white"
             android:elevation="1.5dp"
             android:inputType="text"
             app:iconifiedByDefault="false"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/iv_doa"
-            app:layout_constraintTop_toTopOf="@+id/iv_doa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_doa_title"
             app:queryBackground="@android:color/transparent"
             app:queryHint="Cari Doa"
             tools:ignore="Autofill" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -79,5 +70,31 @@
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cl_header" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.10"
+        android:scaleType="fitCenter"
+        android:src="@drawable/forground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background2"
+        android:alpha="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

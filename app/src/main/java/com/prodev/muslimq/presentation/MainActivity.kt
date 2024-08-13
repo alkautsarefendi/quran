@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity() {
             R.id.quranFragment,
             R.id.shalatFragment,
             R.id.doaFragment,
+            R.id.tasbihFragment,
             R.id.othersFragment
         )
         navController.addOnDestinationChangedListener { _, destination, _ ->

@@ -16,7 +16,7 @@
     <color name="black">#3C3C3C</color>
     <color name="always_black">#000000</color>
     <color name="yellow">#FFEB3B</color>
-    <color name="white_base">#FFFFFFFF</color>
+    <color name="white_base">#fff2df</color>
     <color name="white_second">#FFFFFFFF</color>
     <color name="white_low_opp">#BBC4CE</color>
     <color name="white_always">#FFFFFF</color>

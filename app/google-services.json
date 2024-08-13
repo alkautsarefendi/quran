@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "710152974744",
-    "project_id": "muslimq2202",
-    "storage_bucket": "muslimq2202.appspot.com"
+    "project_number": "141773248700",
+    "project_id": "alquran-beserta-tafsir-dan-doa",
+    "storage_bucket": "alquran-beserta-tafsir-dan-doa.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:710152974744:android:7b583dde4f1b1094977bed",
+        "mobilesdk_app_id": "1:141773248700:android:2607b7e9923be432a098b9",
         "android_client_info": {
-          "package_name": "com.prodev.muslimq"
+          "package_name": "android.muslim.alkautsar"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDzqtr8iwiHtuEG6DHM8lL_k0FupOPLME0"
+          "current_key": "AIzaSyDV6kAW7sqBxEVfIOUv13WFTiy1SR3HFJ8"
         }
       ],
       "services": {
@@ -26,15 +26,34 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:710152974744:android:936e45c067c6b8e2977bed",
+        "mobilesdk_app_id": "1:141773248700:android:0ebc6b6f09ca03a7a098b9",
         "android_client_info": {
-          "package_name": "com.prodev.muslimq.debug"
+          "package_name": "com.alkautsar.alquran.althaf"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDzqtr8iwiHtuEG6DHM8lL_k0FupOPLME0"
+          "current_key": "AIzaSyDV6kAW7sqBxEVfIOUv13WFTiy1SR3HFJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141773248700:android:2b39c6a8998829eda098b9",
+        "android_client_info": {
+          "package_name": "com.alkautsar.projectAlquran"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV6kAW7sqBxEVfIOUv13WFTiy1SR3HFJ8"
         }
       ],
       "services": {

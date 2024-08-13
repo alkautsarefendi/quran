@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/bg_round_green"
-        android:fontFamily="@font/poppins_semibold"
+        android:fontFamily="@font/montserrat_semibold"
         android:includeFontPadding="false"
         android:text="@string/show"
         android:textColor="@color/white_always"

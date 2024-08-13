@@ -50,9 +50,9 @@ android {
                 "proguard-rules.pro"
             )
         }
-        getByName("debug") {
-            applicationIdSuffix = ".debug"
-        }
+//        getByName("debug") {
+//            applicationIdSuffix = ".debug"
+//        }
     }
 
     compileOptions {

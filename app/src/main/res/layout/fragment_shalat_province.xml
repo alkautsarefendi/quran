@@ -141,7 +141,7 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/poppins_semibold"
+            android:fontFamily="@font/montserrat_semibold"
             android:text="@string/no_internet"
             android:textAlignment="center"
             android:textSize="14sp"
@@ -175,7 +175,7 @@
             android:id="@+id/tv_empty"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_medium"
+            android:fontFamily="@font/montserrat_medium"
             android:text="@string/location_not_found"
             android:textAlignment="center"
             android:textColor="@color/green_base"
@@ -193,5 +193,31 @@
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/forground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background2"
+        android:alpha="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

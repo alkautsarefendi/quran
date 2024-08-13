@@ -11,7 +11,8 @@
         android:id="@+id/iv_on_boarding_logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
         android:importantForAccessibility="no"
         android:src="@drawable/ic_muslim"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,14 +22,16 @@
         android:id="@+id/tv_on_boarding_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_bold"
+        android:layout_marginStart="36dp"
+        android:fontFamily="@font/montserrat_bold"
         android:includeFontPadding="false"
         android:text="@string/app_name"
         android:textColor="@color/green_base"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/iv_on_boarding_logo"
         app:layout_constraintStart_toEndOf="@id/iv_on_boarding_logo"
-        app:layout_constraintTop_toTopOf="@id/iv_on_boarding_logo" />
+        app:layout_constraintTop_toTopOf="@id/iv_on_boarding_logo"
+        app:layout_constraintVertical_bias="0.776" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vp_onboard"
@@ -43,13 +46,14 @@
         android:id="@+id/dots_indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="68dp"
         app:dotsColor="@color/green_base"
         app:dotsCornerRadius="8dp"
         app:dotsSize="10dp"
         app:dotsSpacing="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:progressMode="true"
         app:selectedDotColor="@color/green_base" />
@@ -58,8 +62,8 @@
         android:id="@+id/fab_on_boarding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:fontFamily="@font/poppins"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="@font/montserrat_medium"
         android:importantForAccessibility="no"
         android:includeFontPadding="false"
         android:text="@string/done"
@@ -71,6 +75,33 @@
         app:iconTint="@color/white_base"
         app:layout_constraintBottom_toBottomOf="@id/dots_indicator"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/dots_indicator" />
+        app:layout_constraintTop_toTopOf="@id/dots_indicator"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/forground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background2"
+        android:alpha="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

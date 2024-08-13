@@ -18,7 +18,7 @@
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins_bold"
+            android:fontFamily="@font/montserrat_bold"
             android:includeFontPadding="false"
             android:text="@string/other"
             android:textAlignment="center"
