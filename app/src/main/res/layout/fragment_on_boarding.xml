@@ -11,10 +11,10 @@
         android:id="@+id/iv_on_boarding_logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:importantForAccessibility="no"
         android:src="@drawable/ic_muslim"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,16 +22,16 @@
         android:id="@+id/tv_on_boarding_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
+        android:layout_marginTop="104dp"
         android:fontFamily="@font/montserrat_bold"
         android:includeFontPadding="false"
         android:text="@string/app_name"
         android:textColor="@color/green_base"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/iv_on_boarding_logo"
-        app:layout_constraintStart_toEndOf="@id/iv_on_boarding_logo"
-        app:layout_constraintTop_toTopOf="@id/iv_on_boarding_logo"
-        app:layout_constraintVertical_bias="0.776" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_on_boarding_logo" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/vp_onboard"
@@ -53,7 +53,7 @@
         app:dotsSpacing="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:progressMode="true"
         app:selectedDotColor="@color/green_base" />
@@ -62,7 +62,7 @@
         android:id="@+id/fab_on_boarding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
+        android:layout_marginEnd="32dp"
         android:fontFamily="@font/montserrat_medium"
         android:importantForAccessibility="no"
         android:includeFontPadding="false"

@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
+    android:layout_marginVertical="16dp"
     app:cardBackgroundColor="@color/white_second"
     app:cardCornerRadius="10dp">
 
@@ -38,10 +39,9 @@
                     android:id="@+id/tv_ayah_number"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/bg_circle"
                     android:gravity="center"
                     android:paddingHorizontal="6dp"
-                    android:textColor="@color/white_always"
+                    android:textColor="@color/white_base"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -73,17 +73,17 @@
                 app:tint="@color/green_base"
                 tools:ignore="ContentDescription" />
 
-            <ImageView
-                android:id="@+id/iv_share"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="22dp"
-                android:src="@drawable/ic_share"
-                app:layout_constraintBottom_toBottomOf="@+id/iv_tafsir"
-                app:layout_constraintEnd_toStartOf="@id/iv_tafsir"
-                app:layout_constraintTop_toTopOf="@+id/iv_tafsir"
-                app:tint="@color/green_base"
-                tools:ignore="ContentDescription" />
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_share"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="22dp"-->
+<!--                android:src="@drawable/ic_share"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/iv_tafsir"-->
+<!--                app:layout_constraintEnd_toStartOf="@id/iv_tafsir"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/iv_tafsir"-->
+<!--                app:tint="@color/green_base"-->
+<!--                tools:ignore="ContentDescription" />-->
 
             <ImageView
                 android:id="@+id/iv_play_ayah"
@@ -91,9 +91,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="18dp"
                 android:src="@drawable/ic_play_ayah"
-                app:layout_constraintBottom_toBottomOf="@+id/iv_share"
-                app:layout_constraintEnd_toStartOf="@id/iv_share"
-                app:layout_constraintTop_toTopOf="@+id/iv_share"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_tafsir"
+                app:layout_constraintEnd_toStartOf="@id/iv_tafsir"
+                app:layout_constraintTop_toTopOf="@+id/iv_tafsir"
                 app:tint="@color/green_base"
                 tools:ignore="ContentDescription" />
 

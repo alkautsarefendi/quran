@@ -66,22 +66,22 @@
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/iv_logo" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_license"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/montserrat_medium"
-            android:includeFontPadding="false"
-            android:text="@string/license"
-            android:textColor="@color/green_button"
-            android:textSize="14sp"
-            app:backgroundTint="@color/white_always"
-            app:cornerRadius="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_copy_right" />
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btn_license"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:fontFamily="@font/montserrat_medium"-->
+<!--            android:includeFontPadding="false"-->
+<!--            android:text="@string/license"-->
+<!--            android:textColor="@color/green_button"-->
+<!--            android:textSize="14sp"-->
+<!--            app:backgroundTint="@color/white_always"-->
+<!--            app:cornerRadius="8dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/tv_copy_right" />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -122,6 +122,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="ContentDescription" />
+
+    <FrameLayout
+        android:id="@+id/BannerView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

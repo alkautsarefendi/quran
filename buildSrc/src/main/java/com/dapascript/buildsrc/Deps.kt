@@ -18,6 +18,7 @@ object Libs {
     const val material = "com.google.android.material:material:1.10.0"
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.1.4"
     const val datastore = "androidx.datastore:datastore-preferences:1.0.0"
+    const val adsLib = "com.google.android.gms:play-services-ads:23.3.0"
 
     // Appearance
     const val glide = "com.github.bumptech.glide:glide:4.14.2"

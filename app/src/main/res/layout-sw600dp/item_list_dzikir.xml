@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="14dp"
-    app:cardBackgroundColor="@color/white_second"
+    android:layout_marginVertical="16dp"
+    android:layout_marginHorizontal="16dp"
+    app:cardBackgroundColor="@color/white_base"
     app:cardCornerRadius="8dp"
     app:cardElevation="8dp"
-    app:contentPadding="14dp">
+    app:contentPadding="8dp">
 
     <TextView
         android:id="@+id/tv_dzikir"
@@ -18,13 +19,13 @@
         android:fontFamily="@font/montserrat_medium"
         android:includeFontPadding="false"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="16sp"
         tools:text="Subhanallah" />
 
     <ImageView
         android:id="@+id/iv_delete"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
         android:layout_gravity="end|center_vertical"
         android:importantForAccessibility="no"
         android:src="@drawable/ic_delete"

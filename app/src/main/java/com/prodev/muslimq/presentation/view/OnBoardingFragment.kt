@@ -36,18 +36,18 @@ class OnBoardingFragment : BaseFragment<FragmentOnBoardingBinding>(
         val data = listOf(
             OnBoardingItem(
                 R.drawable.quran_onboard,
-                "Al-Qur'an",
-                "Nikmati membaca Al-Qur'an dengan mudah dalam genggaman. Jelajahi berbagai fitur yang tersedia seperti tafsir, & lainnya"
+                "Membaca Al-Qur'an",
+                "Menikmati membaca Al-Qur'an dengan mudah dalam genggaman Smartphone. Jelajahi berbagai fitur yang tersedia seperti tafsir, & lainnya"
             ),
             OnBoardingItem(
                 R.drawable.adzan_onboard,
-                "Jadwal Shalat & Kiblat",
-                "Dapatkan jadwal shalat yang akurat & tepat waktu sesuai lokasi Anda, serta arah kiblat yang mudah diakses"
+                "Waktu Shalat & Arah Kiblat",
+                "Dapatkan waktu shalat yang akurat & tepat waktu sesuai lokasi anda berada, serta arah kiblat yang mudah dan efisien untuk di akses kapanpun"
             ),
             OnBoardingItem(
                 R.drawable.doa_onboard,
-                "Doa Harian",
-                "Temukan koleksi doa harian yang bisa Anda baca atau pelajari, & amalkan dalam kehidupan sehari-hari"
+                "Bacaan Doa Harian & Dzikir",
+                "Temukan koleksi doa harian yang bisa Anda baca atau pelajari, & amalkan dalam kehidupan sehari-hari. Serta anda bisa berdzikir dengan fitur tasbih yang terdapat pada aplikasi ini"
             )
         )
         onBoardingAdapter.setOnBoardingItem(data)

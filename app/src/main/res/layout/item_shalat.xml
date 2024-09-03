@@ -1,42 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white_base"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="15dp">
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/forground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:alpha="0.40"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_shubuh"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:paddingHorizontal="10dp"
+        android:paddingHorizontal="8dp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="24dp">
 
-        <ImageView
-            android:id="@+id/iv_shubuh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/shubuh"
-            android:src="@drawable/ic_shalat_shubuh_blue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/green_base" />
 
         <TextView
             android:id="@+id/tv_shubuh"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_semibold"
             android:text="@string/shubuh"
             android:textColor="@color/black"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_shubuh"
-            app:layout_constraintStart_toEndOf="@id/iv_shubuh"
-            app:layout_constraintTop_toTopOf="@id/iv_shubuh" />
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sw_shubuh"
+            app:layout_constraintHorizontal_bias="0.033"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/sw_shubuh"
@@ -53,7 +71,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="2dp"
             android:textColor="@color/gray"
-            android:textSize="14sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/tv_shubuh"
             app:layout_constraintEnd_toEndOf="parent"
@@ -70,29 +88,20 @@
         app:layout_constraintTop_toBottomOf="@id/cl_shubuh"
         tools:layout_editor_absoluteX="24dp">
 
-        <ImageView
-            android:id="@+id/iv_dzuhur"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/dzuhur"
-            android:src="@drawable/ic_shalat_dzuhur_blue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/green_base" />
-
         <TextView
             android:id="@+id/tv_dzuhur"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_semibold"
             android:text="@string/dzuhur"
             android:textColor="@color/black"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_dzuhur"
-            app:layout_constraintStart_toEndOf="@id/iv_dzuhur"
-            app:layout_constraintTop_toTopOf="@id/iv_dzuhur" />
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sw_dzuhur"
+            app:layout_constraintHorizontal_bias="0.033"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/sw_dzuhur"
@@ -109,7 +118,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="2dp"
             android:textColor="@color/gray"
-            android:textSize="14sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/tv_dzuhur"
             app:layout_constraintEnd_toEndOf="parent"
@@ -126,29 +135,21 @@
         app:layout_constraintTop_toBottomOf="@id/cl_dzuhur"
         tools:layout_editor_absoluteX="24dp">
 
-        <ImageView
-            android:id="@+id/iv_ashar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/ashar"
-            android:src="@drawable/ic_shalat_ashar_blue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/green_base" />
 
         <TextView
             android:id="@+id/tv_ashar"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_semibold"
             android:text="@string/ashar"
             android:textColor="@color/black"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_ashar"
-            app:layout_constraintStart_toEndOf="@id/iv_ashar"
-            app:layout_constraintTop_toTopOf="@id/iv_ashar" />
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sw_ashar"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/sw_ashar"
@@ -165,7 +166,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="2dp"
             android:textColor="@color/gray"
-            android:textSize="14sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/tv_ashar"
             app:layout_constraintEnd_toEndOf="parent"
@@ -182,29 +183,20 @@
         app:layout_constraintTop_toBottomOf="@id/cl_ashar"
         tools:layout_editor_absoluteX="24dp">
 
-        <ImageView
-            android:id="@+id/iv_maghrib"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/maghrib"
-            android:src="@drawable/ic_shalat_maghrib_blue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/green_base" />
-
         <TextView
             android:id="@+id/tv_maghrib"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_semibold"
             android:text="@string/maghrib"
             android:textColor="@color/black"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_maghrib"
-            app:layout_constraintStart_toEndOf="@id/iv_maghrib"
-            app:layout_constraintTop_toTopOf="@id/iv_maghrib" />
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sw_maghrib"
+            app:layout_constraintHorizontal_bias="0.034"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/sw_maghrib"
@@ -221,7 +213,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="2dp"
             android:textColor="@color/gray"
-            android:textSize="14sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/tv_maghrib"
             app:layout_constraintEnd_toEndOf="parent"
@@ -238,29 +230,20 @@
         app:layout_constraintTop_toBottomOf="@id/cl_maghrib"
         tools:layout_editor_absoluteX="24dp">
 
-        <ImageView
-            android:id="@+id/iv_isya"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/isya"
-            android:src="@drawable/ic_shalat_isya_blue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/green_base" />
-
         <TextView
             android:id="@+id/tv_isya"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_semibold"
             android:text="@string/isya"
             android:textColor="@color/black"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_isya"
-            app:layout_constraintStart_toEndOf="@id/iv_isya"
-            app:layout_constraintTop_toTopOf="@id/iv_isya" />
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sw_isya"
+            app:layout_constraintHorizontal_bias="0.029"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.516" />
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/sw_isya"
@@ -277,7 +260,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="2dp"
             android:textColor="@color/gray"
-            android:textSize="14sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/tv_isya"
             app:layout_constraintEnd_toEndOf="parent"
@@ -287,30 +270,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:alpha="0.10"
-        android:scaleType="fitCenter"
-        android:src="@drawable/forground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="ContentDescription" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/background2"
-        android:alpha="0.90"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

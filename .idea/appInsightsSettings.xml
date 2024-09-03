@@ -8,8 +8,8 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.alkautsar.projectAlquran" />
-                  <option name="mobileSdkAppId" value="1:141773248700:android:2b39c6a8998829eda098b9" />
+                  <option name="appId" value="com.alkautsar.alquran.althaf" />
+                  <option name="mobileSdkAppId" value="1:141773248700:android:0ebc6b6f09ca03a7a098b9" />
                   <option name="projectId" value="alquran-beserta-tafsir-dan-doa" />
                   <option name="projectNumber" value="141773248700" />
                 </ConnectionSetting>

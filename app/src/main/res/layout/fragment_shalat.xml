@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@color/white_base"
     android:overScrollMode="never"
-    android:paddingBottom="60dp"
     android:backgroundTintMode="screen"
     tools:context=".presentation.view.shalat.ShalatFragment">
 

@@ -113,21 +113,14 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <ImageView
-                    android:id="@+id/iv_left_kaligrafi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_kaligrafi"
-                    app:layout_constraintStart_toStartOf="@id/cl_surah"
-                    app:layout_constraintTop_toTopOf="@id/cl_surah"
-                    app:layout_constraintBottom_toBottomOf="@id/cl_surah"
-                    tools:ignore="ContentDescription" />
+
 
                 <ImageView
                     android:id="@+id/iv_right_kaligrafi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
                     android:rotationY="180"
+                    android:alpha="0.10"
                     android:src="@drawable/ic_kaligrafi"
                     app:layout_constraintEnd_toEndOf="@id/cl_surah"
                     app:layout_constraintTop_toTopOf="@id/cl_surah"

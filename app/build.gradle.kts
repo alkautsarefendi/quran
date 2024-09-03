@@ -86,6 +86,7 @@ dependencies {
     implementation(Libs.material)
     implementation(Libs.constraintLayout)
     implementation(Libs.datastore)
+    implementation(Libs.adsLib)
 
     // Appearance
     implementation(Libs.glide)

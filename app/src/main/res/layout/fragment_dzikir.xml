@@ -69,7 +69,7 @@
             android:checkable="false"
             android:fontFamily="@font/montserrat_bold"
             android:includeFontPadding="false"
-            android:text="@string/plus"
+            android:text="+ Tambahkan"
             android:textColor="@color/white_always"
             app:chipBackgroundColor="@color/green_base"
             app:chipCornerRadius="8dp"

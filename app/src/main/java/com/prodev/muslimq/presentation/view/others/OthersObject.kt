@@ -8,7 +8,6 @@ object OthersObject {
         R.drawable.ic_collection,
         R.drawable.ic_dark_mode,
         R.drawable.ic_asmaul_husna,
-        R.drawable.ic_tasbih,
         R.drawable.ic_notif_setting,
         R.drawable.ic_hearing,
         R.drawable.ic_about
@@ -18,7 +17,6 @@ object OthersObject {
         "Baca Nanti",
         "Mode Gelap",
         "Asmaul Husna",
-        "Tasbih Digital",
         "Pengaturan Notifikasi",
         "Pilih Muadzin",
         "Info Aplikasi"

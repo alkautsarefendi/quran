@@ -14,28 +14,19 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="24dp">
 
-        <ImageView
-            android:id="@+id/iv_shubuh"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:background="@color/light_gray"
-            android:contentDescription="@string/shubuh"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/tv_shubuh"
             android:layout_width="80dp"
             android:layout_height="0dp"
-            android:layout_marginStart="10dp"
             android:background="@color/light_gray"
             android:fontFamily="@font/montserrat_semibold"
             android:textColor="@color/light_gray"
             android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_shubuh"
-            app:layout_constraintStart_toEndOf="@id/iv_shubuh"
-            app:layout_constraintTop_toTopOf="@id/iv_shubuh" />
+            app:layout_constraintEnd_toStartOf="@+id/tv_shubuh_time"
+            app:layout_constraintHorizontal_bias="0.028"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="13dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/tv_shubuh_time"
@@ -61,28 +52,19 @@
         app:layout_constraintTop_toBottomOf="@id/cl_shubuh"
         tools:layout_editor_absoluteX="24dp">
 
-        <ImageView
-            android:id="@+id/iv_dzuhur"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:background="@color/light_gray"
-            android:contentDescription="@string/dzuhur"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/tv_dzuhur"
             android:layout_width="80dp"
             android:layout_height="0dp"
-            android:layout_marginStart="10dp"
             android:background="@color/light_gray"
             android:fontFamily="@font/montserrat_semibold"
             android:textColor="@color/light_gray"
             android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_dzuhur"
-            app:layout_constraintStart_toEndOf="@id/iv_dzuhur"
-            app:layout_constraintTop_toTopOf="@id/iv_dzuhur" />
+            app:layout_constraintEnd_toStartOf="@+id/tv_dzuhur_time"
+            app:layout_constraintHorizontal_bias="0.028"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="15dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/tv_dzuhur_time"
@@ -108,28 +90,19 @@
         app:layout_constraintTop_toBottomOf="@id/cl_dzuhur"
         tools:layout_editor_absoluteX="24dp">
 
-        <ImageView
-            android:id="@+id/iv_ashar"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:background="@color/light_gray"
-            android:contentDescription="@string/ashar"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/tv_ashar"
             android:layout_width="80dp"
             android:layout_height="0dp"
-            android:layout_marginStart="10dp"
             android:background="@color/light_gray"
             android:fontFamily="@font/montserrat_semibold"
             android:textColor="@color/light_gray"
             android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_ashar"
-            app:layout_constraintStart_toEndOf="@id/iv_ashar"
-            app:layout_constraintTop_toTopOf="@id/iv_ashar" />
+            app:layout_constraintEnd_toStartOf="@+id/tv_ashar_time"
+            app:layout_constraintHorizontal_bias="0.028"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="13dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/tv_ashar_time"
@@ -156,28 +129,19 @@
         app:layout_constraintTop_toBottomOf="@id/cl_ashar"
         tools:layout_editor_absoluteX="24dp">
 
-        <ImageView
-            android:id="@+id/iv_maghrib"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:background="@color/light_gray"
-            android:contentDescription="@string/maghrib"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/tv_maghrib"
             android:layout_width="80dp"
             android:layout_height="0dp"
-            android:layout_marginStart="10dp"
             android:background="@color/light_gray"
             android:fontFamily="@font/montserrat_semibold"
             android:textColor="@color/light_gray"
             android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_maghrib"
-            app:layout_constraintStart_toEndOf="@id/iv_maghrib"
-            app:layout_constraintTop_toTopOf="@id/iv_maghrib" />
+            app:layout_constraintEnd_toStartOf="@+id/tv_maghrib_time"
+            app:layout_constraintHorizontal_bias="0.028"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/tv_maghrib_time"
@@ -204,28 +168,19 @@
         app:layout_constraintTop_toBottomOf="@id/cl_maghrib"
         tools:layout_editor_absoluteX="24dp">
 
-        <ImageView
-            android:id="@+id/iv_isya"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:background="@color/light_gray"
-            android:contentDescription="@string/isya"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/tv_isya"
             android:layout_width="80dp"
             android:layout_height="0dp"
-            android:layout_marginStart="10dp"
             android:background="@color/light_gray"
             android:fontFamily="@font/montserrat_semibold"
             android:textColor="@color/light_gray"
             android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="@+id/iv_isya"
-            app:layout_constraintStart_toEndOf="@id/iv_isya"
-            app:layout_constraintTop_toTopOf="@id/iv_isya" />
+            app:layout_constraintEnd_toStartOf="@+id/tv_isya_time"
+            app:layout_constraintHorizontal_bias="0.028"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="13dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/tv_isya_time"

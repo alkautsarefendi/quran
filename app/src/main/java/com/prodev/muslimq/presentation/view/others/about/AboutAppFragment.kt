@@ -9,6 +9,7 @@ import com.prodev.muslimq.BuildConfig
 import com.prodev.muslimq.R
 import com.prodev.muslimq.databinding.DialogInfoSurahBinding
 import com.prodev.muslimq.databinding.FragmentAboutAppBinding
+import com.prodev.muslimq.presentation.BaseUtils
 import com.prodev.muslimq.presentation.view.BaseFragment
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -26,19 +27,20 @@ class AboutAppFragment : BaseFragment<FragmentAboutAppBinding>(FragmentAboutAppB
             ivBack.setOnClickListener { findNavController().popBackStack() }
 
             tvVersion.text = getString(R.string.app_version, BuildConfig.VERSION_NAME)
+            binding.BannerView?.let { BaseUtils().loadBanner(it) }
 
-            btnLicense.setOnClickListener {
-                DialogInfoSurahBinding.inflate(layoutInflater).apply {
-                    tvInfoTitle.visibility = View.GONE
-                    tvInfoMessage.text = getString(R.string.mit_license)
-                    with(curvedDialog.create()) {
-                        setView(root)
-                        show()
-
-                        tvInfoClose.setOnClickListener { dismiss() }
-                    }
-                }
-            }
+//            btnLicense.setOnClickListener {
+//                DialogInfoSurahBinding.inflate(layoutInflater).apply {
+//                    tvInfoTitle.visibility = View.GONE
+//                    tvInfoMessage.text = getString(R.string.mit_license)
+//                    with(curvedDialog.create()) {
+//                        setView(root)
+//                        show()
+//
+//                        tvInfoClose.setOnClickListener { dismiss() }
+//                    }
+//                }
+//            }
         }
     }
 

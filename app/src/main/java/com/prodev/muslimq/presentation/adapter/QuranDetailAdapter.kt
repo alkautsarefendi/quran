@@ -81,9 +81,9 @@ class QuranDetailAdapter(
                     tafsirClick?.invoke(getItem(adapterPosition))
                 }
 
-                ivShare.setOnClickListener {
-                    shareIntent(getItem(adapterPosition))
-                }
+//                ivShare.setOnClickListener {
+//                    shareIntent(getItem(adapterPosition))
+//                }
 
                 ivPlayAyah.setOnClickListener {
                     audioAyahClick?.invoke(getItem(adapterPosition))
@@ -98,8 +98,8 @@ class QuranDetailAdapter(
         shareIntent.putExtra(
             Intent.EXTRA_TEXT,
             "Q.S. $surahName Ayat ${ayat.ayatNumber} \n\n${ayat.ayatArab} \nArtinya: " +
-                    "\n\"${ayat.ayatTerjemahan}\" \n\n Diambil dari aplikasi Muslim Q" +
-                    "\n https://play.google.com/store/apps/details?id=com.prodev.muslimq"
+                    "\n\"${ayat.ayatTerjemahan}\" \n\n Diambil dari Aplikasi" +
+                    "\n LETAKKAN LINK APPS PLAYSTORE DISINI" //GANTI LINK INI
         )
         context.startActivity(
             Intent.createChooser(
