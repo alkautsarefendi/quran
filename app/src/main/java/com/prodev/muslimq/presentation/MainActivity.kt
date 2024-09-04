@@ -27,7 +27,7 @@ import com.prodev.muslimq.presentation.viewmodel.SplashViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseUtils() {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity() {
 
         setNavController(navController)
         setDarkMode()
+        setupInterstitial()
     }
 
     private fun setNavController(navController: NavController) {
@@ -75,6 +76,8 @@ class MainActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             // give animation when hide/show bottom nav
             showBottomNav(destination.id in exceptFragment, binding.bottomNav)
+            showInterstitial()
+
         }
         binding.bottomNav.setupWithNavController(navController)
     }

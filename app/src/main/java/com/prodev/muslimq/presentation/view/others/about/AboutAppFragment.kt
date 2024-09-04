@@ -27,7 +27,9 @@ class AboutAppFragment : BaseFragment<FragmentAboutAppBinding>(FragmentAboutAppB
             ivBack.setOnClickListener { findNavController().popBackStack() }
 
             tvVersion.text = getString(R.string.app_version, BuildConfig.VERSION_NAME)
-            binding.BannerView?.let { BaseUtils().loadBanner(it) }
+            binding.BannerView?.let { banerView ->
+                BaseUtils().loadBanner(banerView)
+            }
 
 //            btnLicense.setOnClickListener {
 //                DialogInfoSurahBinding.inflate(layoutInflater).apply {

@@ -30,9 +30,9 @@ open class BaseUtils : AppCompatActivity() {
 
         val unitIdInterstitial: String
         if(BuildConfig.DEBUG){
-            unitIdInterstitial = "ca-app-pub-3940256099942544/1033173712"
+            unitIdInterstitial = "ca-app-pub-3940256099942544/1033173712" //debug version
         }else{
-            unitIdInterstitial = "is surang cepet, pakai nan asli"
+            unitIdInterstitial = "ca-app-pub-7025020357054894/2664543660" // prod Version
         }
         CoroutineScope(Dispatchers.Main).launch {
 
@@ -86,9 +86,9 @@ open class BaseUtils : AppCompatActivity() {
 
             var unitIdBanner = ""
             if(BuildConfig.DEBUG){
-                unitIdBanner = "ca-app-pub-3940256099942544/9214589741"
+                unitIdBanner = "ca-app-pub-3940256099942544/9214589741" //dev version
             }else{
-                unitIdBanner = "is surang cepet, pakai nan asli"
+                unitIdBanner = "ca-app-pub-7025020357054894/3892367996"  //prod version
             }
             adView?.adUnitId = unitIdBanner
             adView?.setAdSizes(getSize(adViewContainer))
