@@ -96,7 +96,6 @@ dependencies {
     implementation(Libs.pullToRefresh)
     implementation(Libs.dotsIndicator)
     implementation(Libs.primeCalendar)
-    implementation(Libs.googlePlayCore)
 
     // Navigation
     implementation(Libs.navigationFragment)

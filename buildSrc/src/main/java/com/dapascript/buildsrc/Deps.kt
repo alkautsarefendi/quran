@@ -27,7 +27,6 @@ object Libs {
     const val pullToRefresh = "com.github.SimformSolutionsPvtLtd:SSPullToRefresh:1.3"
     const val dotsIndicator = "com.tbuonomo:dotsindicator:4.2"
     const val primeCalendar = "com.aminography:primecalendar:1.7.0"
-    const val googlePlayCore = "com.google.android.play:core:1.10.3"
 
     // Navigation
     private const val navigationVersion = "2.7.4"
