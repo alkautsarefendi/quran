@@ -84,6 +84,8 @@ open class BaseUtils : AppCompatActivity() {
     fun loadBanner(adViewContainer: FrameLayout) {
         try {
 
+            Log.e("BASE UTIL", "LOAD BANNER")
+
             var unitIdBanner = ""
             if(BuildConfig.DEBUG){
                 unitIdBanner = "ca-app-pub-3940256099942544/9214589741" //dev version

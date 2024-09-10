@@ -8,8 +8,8 @@ object Libs {
     const val appId = "com.alkautsar.alquran.althaf"
     const val minSdk = 24
     const val targetSdk = 34
-    const val versionCode = 1
-    const val versionName = "1.0.1"
+    const val versionCode = 5
+    const val versionName = "1.1.1"
     const val testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
     // Main
@@ -27,6 +27,7 @@ object Libs {
     const val pullToRefresh = "com.github.SimformSolutionsPvtLtd:SSPullToRefresh:1.3"
     const val dotsIndicator = "com.tbuonomo:dotsindicator:4.2"
     const val primeCalendar = "com.aminography:primecalendar:1.7.0"
+    const val googlePlayCore = "com.google.android.play:core:1.10.3"
 
     // Navigation
     private const val navigationVersion = "2.7.4"

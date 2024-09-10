@@ -1,12 +1,15 @@
 package com.prodev.muslimq.presentation
 
+import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.provider.Settings
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -19,6 +22,10 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.snackbar.Snackbar
+import com.google.android.play.core.review.ReviewManager
+import com.google.android.play.core.review.ReviewManagerFactory
+import com.google.android.play.core.tasks.Task
+
 import com.prodev.muslimq.R
 import com.prodev.muslimq.core.utils.UITheme
 import com.prodev.muslimq.databinding.ActivityMainBinding
@@ -52,6 +59,8 @@ class MainActivity : BaseUtils() {
         setNavController(navController)
         setDarkMode()
         setupInterstitial()
+        checkInAppReviewCondition() // Panggil fungsi ini setelah semua setup lain di onCreate
+
     }
 
     private fun setNavController(navController: NavController) {
@@ -76,7 +85,11 @@ class MainActivity : BaseUtils() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             // give animation when hide/show bottom nav
             showBottomNav(destination.id in exceptFragment, binding.bottomNav)
-            showInterstitial()
+            if (destination.id == R.id.shalatFragment ||
+                destination.id == R.id.doaFragment
+            ) {
+                showInterstitial()
+            }
 
         }
         binding.bottomNav.setupWithNavController(navController)
@@ -194,5 +207,49 @@ class MainActivity : BaseUtils() {
 
     fun showOverlay(state: Boolean) {
         binding.gestureOverlay.isVisible = state
+    }
+
+    fun Activity.launchInAppReview(onComplete: (() -> Unit)? = null) {
+        val reviewManager = ReviewManagerFactory.create(this)
+        val request = reviewManager.requestReviewFlow()
+
+        request.addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                val reviewInfo = task.result
+                val flow = reviewManager.launchReviewFlow(this, reviewInfo)
+
+                flow.addOnCompleteListener {
+                    this@MainActivity.customSnackbar(true,
+                        this,
+                        binding.root,"Terima kasih atas masukan Anda!")
+                    onComplete?.invoke()
+                }
+            } else {
+                // Catat atau tangani kesalahan jika diperlukan
+                onComplete?.invoke()
+            }
+        }
+    }
+
+    private fun checkInAppReviewCondition() {
+        val prefs = getSharedPreferences("app_preferences", Context.MODE_PRIVATE)
+        val firstLaunchTime = prefs.getLong("first_launch_time", 0L)
+
+        Log.e("MAINACTIVITY", "Method ini di panggil")
+
+        if (firstLaunchTime == 0L) {// Simpan waktu pertama kali aplikasi dibuka
+            prefs.edit().putLong("first_launch_time", System.currentTimeMillis()).apply()
+        } else {
+            val currentTime = System.currentTimeMillis()
+            val daysSinceFirstLaunch = (currentTime - firstLaunchTime) / (1000 * 60 * 60 * 24)
+
+            if (daysSinceFirstLaunch >= 1) { // Contoh: 1 hari
+                // Tampilkan dialog in-app review
+                launchInAppReview {
+                    // Reset waktu setelah review, atau lakukan tindakan lain
+                    prefs.edit().remove("first_launch_time").apply()
+                }
+            }
+        }
     }
 }

@@ -19,6 +19,7 @@ import com.prodev.muslimq.databinding.FragmentQuranBinding
 import com.prodev.muslimq.helper.InternetReceiver
 import com.prodev.muslimq.helper.hideKeyboard
 import com.prodev.muslimq.helper.swipeRefresh
+import com.prodev.muslimq.presentation.BaseUtils
 import com.prodev.muslimq.presentation.adapter.QuranAdapter
 import com.prodev.muslimq.presentation.view.BaseFragment
 import com.prodev.muslimq.presentation.viewmodel.DataStoreViewModel
@@ -44,8 +45,10 @@ class QuranFragment : BaseFragment<FragmentQuranBinding>(FragmentQuranBinding::i
                 // scroll to parent
                 rvSurah.scrollToPosition(0)
                 appBar.setExpanded(true, true)
+
             }
         }
+
 
         swipeRefresh(
             { InternetReceiver().onReceive(requireActivity(), Intent()) }, binding.srlSurah
@@ -125,6 +128,7 @@ class QuranFragment : BaseFragment<FragmentQuranBinding>(FragmentQuranBinding::i
                 }
             }
         }
+
 
         quranViewModel.apply {
             isCollapse.observe(viewLifecycleOwner) { yes ->

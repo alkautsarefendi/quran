@@ -31,7 +31,7 @@ class AboutAppFragment : BaseFragment<FragmentAboutAppBinding>(FragmentAboutAppB
                 BaseUtils().loadBanner(banerView)
             }
 
-//            btnLicense.setOnClickListener {
+//            btnLisensi.setOnClickListener {
 //                DialogInfoSurahBinding.inflate(layoutInflater).apply {
 //                    tvInfoTitle.visibility = View.GONE
 //                    tvInfoMessage.text = getString(R.string.mit_license)
@@ -43,6 +43,8 @@ class AboutAppFragment : BaseFragment<FragmentAboutAppBinding>(FragmentAboutAppB
 //                    }
 //                }
 //            }
+
+
         }
     }
 

@@ -192,6 +192,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         tools:text="الفاتحة" />
 
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <com.facebook.shimmer.ShimmerFrameLayout
