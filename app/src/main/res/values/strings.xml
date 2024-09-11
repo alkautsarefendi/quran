@@ -65,7 +65,6 @@
     <string name="delete_audio">Hapus Audio</string>
     <string name="tag">Tandai</string>
     <string name="app_id">ca-app-pub-5351128060428013~4196500302</string>
-    <string name="banner_id">ca-app-pub-5351128060428013/8076907702</string>
     <string name="interstitial_id">ca-app-pub-5351128060428013/9948941311</string>
     <string name="not_found">Pencarian tidak ditemukan</string>
     <string name="close">Tutup</string>
@@ -111,6 +110,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="asmaul_husna">Asmaul Husna</string>
     <string name="tasbih_menu">Tasbih</string>
-    <string name="setting">Setting</string>
+    <string name="setting">Menu Lainnya</string>
     <string name="qiblat">Qiblat</string>
+    <string name="banner_id">ca-app-pub-3940256099942544/9214589741</string>
 </resources>

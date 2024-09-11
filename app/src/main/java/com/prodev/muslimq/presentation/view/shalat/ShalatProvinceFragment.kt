@@ -7,6 +7,7 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.gms.ads.AdRequest
 import com.prodev.muslimq.core.utils.Resource
 import com.prodev.muslimq.databinding.FragmentShalatProvinceBinding
 import com.prodev.muslimq.helper.hideKeyboard
@@ -36,6 +37,9 @@ class ShalatProvinceFragment :
 
         initAdapter()
         initViewModel()
+
+        val adRequest = AdRequest.Builder().build()
+        binding.adView.loadAd(adRequest)
     }
 
     private fun initAdapter() {

@@ -26,6 +26,7 @@
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/tv_version"
@@ -66,22 +67,22 @@
             android:textSize="14sp"
             app:layout_constraintTop_toBottomOf="@id/iv_logo" />
 
-<!--        <com.google.android.material.button.MaterialButton-->
-<!--            android:id="@+id/btn_license"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:fontFamily="@font/montserrat_medium"-->
-<!--            android:includeFontPadding="false"-->
-<!--            android:text="@string/license"-->
-<!--            android:textColor="@color/green_button"-->
-<!--            android:textSize="14sp"-->
-<!--            app:backgroundTint="@color/white_always"-->
-<!--            app:cornerRadius="8dp"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@id/tv_copy_right" />-->
+        <!--        <com.google.android.material.button.MaterialButton-->
+        <!--            android:id="@+id/btn_license"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginTop="16dp"-->
+        <!--            android:fontFamily="@font/montserrat_medium"-->
+        <!--            android:includeFontPadding="false"-->
+        <!--            android:text="@string/license"-->
+        <!--            android:textColor="@color/green_button"-->
+        <!--            android:textSize="14sp"-->
+        <!--            app:backgroundTint="@color/white_always"-->
+        <!--            app:cornerRadius="8dp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/tv_copy_right" />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -90,6 +91,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:elevation="4dp"
         android:fontFamily="@font/montserrat_medium"
         android:textAlignment="center"
         android:textColor="@color/white_always"
@@ -122,15 +124,19 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="ContentDescription" />
 
-    <FrameLayout
-        android:id="@+id/BannerView"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView1"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        app:adSize="BANNER"
+        app:layout_constraintBottom_toTopOf="@+id/tv_version"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints" />
+        app:adUnitId="@string/banner_id"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

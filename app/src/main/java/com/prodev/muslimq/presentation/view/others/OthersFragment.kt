@@ -9,6 +9,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.gms.ads.AdRequest
 import com.prodev.muslimq.R
 import com.prodev.muslimq.core.utils.UITheme
 import com.prodev.muslimq.databinding.DialogSettingNotificationBinding
@@ -36,6 +37,9 @@ class OthersFragment : BaseFragment<FragmentOthersBinding>(FragmentOthersBinding
         super.onViewCreated(view, savedInstanceState)
 
         setRecyclerView()
+
+        val adRequest = AdRequest.Builder().build()
+        binding.adView.loadAd(adRequest)
     }
 
     private fun setRecyclerView() {

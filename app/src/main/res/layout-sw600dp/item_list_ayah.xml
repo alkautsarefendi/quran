@@ -105,7 +105,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/montserrat_bold"
+            android:fontFamily="@font/amiri_bold"
             android:includeFontPadding="false"
             android:textColor="@color/black"
             android:lineSpacingExtra="8sp"

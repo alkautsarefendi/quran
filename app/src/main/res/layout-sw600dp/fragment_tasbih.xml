@@ -187,7 +187,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:fontFamily="@font/montserrat_bold"
+                        android:fontFamily="@font/amiri_bold"
                         android:includeFontPadding="false"
                         android:letterSpacing="0.1"
                         android:lineSpacingExtra="4sp"

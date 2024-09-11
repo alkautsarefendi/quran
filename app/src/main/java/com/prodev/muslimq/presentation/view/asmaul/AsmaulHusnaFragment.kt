@@ -5,6 +5,7 @@ import android.view.View
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
+import com.google.android.gms.ads.AdRequest
 import com.prodev.muslimq.databinding.FragmentAsmaulHusnaBinding
 import com.prodev.muslimq.presentation.adapter.AsmaulHusnaAdapter
 import com.prodev.muslimq.presentation.view.BaseFragment
@@ -26,6 +27,9 @@ class AsmaulHusnaFragment : BaseFragment<FragmentAsmaulHusnaBinding>(
 
         initAdapter()
         initViewModel()
+
+        val adRequest = AdRequest.Builder().build()
+        binding.adView.loadAd(adRequest)
     }
 
     private fun initAdapter() {

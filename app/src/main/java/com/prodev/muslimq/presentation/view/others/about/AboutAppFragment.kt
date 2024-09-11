@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.navigation.fragment.findNavController
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
 import com.prodev.muslimq.BuildConfig
 import com.prodev.muslimq.R
 import com.prodev.muslimq.databinding.DialogInfoSurahBinding
@@ -27,9 +29,7 @@ class AboutAppFragment : BaseFragment<FragmentAboutAppBinding>(FragmentAboutAppB
             ivBack.setOnClickListener { findNavController().popBackStack() }
 
             tvVersion.text = getString(R.string.app_version, BuildConfig.VERSION_NAME)
-            binding.BannerView?.let { banerView ->
-                BaseUtils().loadBanner(banerView)
-            }
+
 
 //            btnLisensi.setOnClickListener {
 //                DialogInfoSurahBinding.inflate(layoutInflater).apply {
@@ -44,7 +44,8 @@ class AboutAppFragment : BaseFragment<FragmentAboutAppBinding>(FragmentAboutAppB
 //                }
 //            }
 
-
+            val adRequest = AdRequest.Builder().build()
+            binding.adView.loadAd(adRequest)
         }
     }
 

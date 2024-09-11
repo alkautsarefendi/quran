@@ -82,8 +82,9 @@ class MainActivity : BaseUtils() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             // give animation when hide/show bottom nav
             showBottomNav(destination.id in exceptFragment, binding.bottomNav)
-            if (destination.id == R.id.shalatFragment ||
-                destination.id == R.id.doaFragment
+            if (destination.id == R.id.shalatFragment
+                || destination.id == R.id.doaFragment
+                || destination.id == R.id.tasbihFragment
             ) {
                 showInterstitial()
             }

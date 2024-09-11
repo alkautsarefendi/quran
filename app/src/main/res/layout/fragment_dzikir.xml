@@ -81,6 +81,16 @@
 
     </com.google.android.material.appbar.MaterialToolbar>
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_spinner" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_spinner"
         android:layout_width="match_parent"
@@ -124,7 +134,7 @@
         android:paddingBottom="70dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cl_spinner"
+        app:layout_constraintTop_toBottomOf="@id/adView"
         tools:layout_editor_absoluteX="10dp"
         tools:listitem="@layout/item_list_dzikir" />
 

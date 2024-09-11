@@ -12,6 +12,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.gms.ads.AdRequest
 import com.prodev.muslimq.R
 import com.prodev.muslimq.databinding.DialogDeleteAllBinding
 import com.prodev.muslimq.databinding.DialogInfoSurahBinding
@@ -44,6 +45,9 @@ class BookmarkFragment : BaseFragment<FragmentBookmarkBinding>(FragmentBookmarkB
 
             ivMore.setOnClickListener { showMenuOption() }
         }
+
+        val adRequest = AdRequest.Builder().build()
+        binding.adView.loadAd(adRequest)
     }
 
     @SuppressLint("SetTextI18n")

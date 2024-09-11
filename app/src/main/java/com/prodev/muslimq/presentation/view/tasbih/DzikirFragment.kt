@@ -9,6 +9,7 @@ import androidx.fragment.app.setFragmentResult
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import com.google.android.gms.ads.AdRequest
 import com.prodev.muslimq.R
 import com.prodev.muslimq.core.data.source.local.model.TasbihEntity
 import com.prodev.muslimq.core.utils.DzikirType
@@ -52,6 +53,9 @@ class DzikirFragment : BaseFragment<FragmentDzikirBinding>(FragmentDzikirBinding
         initAdapter()
         initDzikir()
         initSpinner()
+
+        val adRequest = AdRequest.Builder().build()
+        binding.adView?.loadAd(adRequest)
     }
 
     private fun initSpinner() {

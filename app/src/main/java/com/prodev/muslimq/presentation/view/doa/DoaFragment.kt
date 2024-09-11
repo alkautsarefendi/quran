@@ -6,6 +6,7 @@ import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.SimpleItemAnimator
+import com.google.android.gms.ads.AdRequest
 import com.prodev.muslimq.databinding.FragmentDoaBinding
 import com.prodev.muslimq.helper.hideKeyboard
 import com.prodev.muslimq.presentation.adapter.DoaAdapter
@@ -37,6 +38,9 @@ class DoaFragment : BaseFragment<FragmentDoaBinding>(FragmentDoaBinding::inflate
 
         setAdapter()
         setViewModel()
+
+        val adRequest = AdRequest.Builder().build()
+        binding.adView.loadAd(adRequest)
     }
 
     private fun setAdapter() {

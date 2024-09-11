@@ -45,7 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/montserrat_bold"
+            android:fontFamily="@font/amiri_bold"
             android:includeFontPadding="false"
             android:textColor="@color/black"
             android:textSize="32sp"

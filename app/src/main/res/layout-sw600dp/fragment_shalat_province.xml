@@ -39,6 +39,16 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
     <androidx.appcompat.widget.SearchView
         android:id="@+id/sv_province"
         android:layout_width="0dp"
@@ -48,6 +58,7 @@
         app:layout_constraintBottom_toTopOf="@+id/srl_province"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137"
         app:queryHint="Cari Provinsi"
         app:searchIcon="@drawable/ic_search"
         tools:ignore="ContentDescription" />
@@ -60,7 +71,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        app:layout_constraintTop_toBottomOf="@+id/adView">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_province"
